@@ -30,8 +30,8 @@ export function useFavoritoContext() {
         novaLista.splice(novaLista.indexOf(novoFavorito), 1);
         return setFavorito(novaLista)
     }
-    return (
+    return {
         favorito,
         adicionarFavorito
-    )
+    }
 }
